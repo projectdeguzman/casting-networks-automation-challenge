@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="13.609" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-01-25T15:45:17" tests="0" file="cypress/e2e/test/amazon-ca-tests/tc00001.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="TC00001" timestamp="2023-01-25T15:45:17" tests="1" time="13.579" failures="1">
+    <testcase name="TC00001 &quot;before each&quot; hook for &quot;Subtotal Calculation after Adding Item(s) to Cart should result in correct calculation as Checkout page&quot;" time="0.000" classname="&quot;before each&quot; hook for &quot;Subtotal Calculation after Adding Item(s) to Cart should result in correct calculation as Checkout page&quot;">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `#ap_password`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `TC00001`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `#ap_password`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `TC00001`
+    at Homepage.enterUserPassword (webpack:///./cypress/pages/homepage.cy.js:19:18)
+    at Homepage.signIn (webpack:///./cypress/pages/homepage.cy.js:40:13)
+    at Context.eval (webpack:///./cypress/e2e/test/amazon-ca-tests/tc00001.cy.js:19:17)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

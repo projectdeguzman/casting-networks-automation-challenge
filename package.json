@@ -4,7 +4,7 @@
     "description": "Automation challenge response by Edrick de Guzman",
     "main": "index.js",
     "scripts": {
-        "test": "npx cypress run --record false --headless"
+        "test": "npx cypress run --record false --headless --reporter junit --reporter-options 'mochaFile=results/my-test-output-[hash].xml'"
     },
     "keywords": [],
     "author": "Edrick de Guzman",

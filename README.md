@@ -36,6 +36,12 @@
 - Cypress out of box retry and wait functionalities are in-use by default. Environment Variables are exposed to be able to configure these values.
 - Utilizing the out-of-box default functionalities is a means to avoid re-inventing the wheel. Enabling environment variables allows for these out-of-box solutions to be configured.
 
+# Results Reporting
+- The test results for an execution is stored in `results/` directory in the project root.
+- JUnit Reports is configured for the project and each spec file will generate its own results file using unique hash id
+- The JUnit xml reports can be used and imported into Jenkins or Xray for tracking results
+- The reports configuration can be found in cypress.config.js
+
 # FILED BUGS FOR CASE STUDY
 - BUG #1: Subtotal price after adding item(s) to cart does not display the correct subtotal calculation as Checkout page
     Steps to reproduce:

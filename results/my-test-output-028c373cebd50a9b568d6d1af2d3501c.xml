@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.352" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-01-25T15:45:40" tests="0" file="cypress/e2e/test/amazon-ca-tests/tc00002.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="TC00002" timestamp="2023-01-25T15:45:40" tests="1" time="3.330" failures="1">
+    <testcase name="TC00002 &quot;before each&quot; hook for &quot;Subtotal Calculation in Shopping Cart Page should result in correct calculation as Checkout page&quot;" time="0.000" classname="&quot;before each&quot; hook for &quot;Subtotal Calculation in Shopping Cart Page should result in correct calculation as Checkout page&quot;">
+      <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; Could not resolve &apos;light 1em Amazon Ember&apos; as a font.
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `TC00002`" type="SyntaxError"><![CDATA[SyntaxError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  > Could not resolve 'light 1em Amazon Ember' as a font.
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `TC00002`]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -16,4 +16,9 @@ module.exports = defineConfig({
         numItemsToAdd: 2,
         globalTimeout: 10000
     },
+    reporter: 'junit',
+    reporterOptions: {
+        mochaFile: 'results/my-test-output-[hash].xml',
+        toConsole: true,
+    },
 });

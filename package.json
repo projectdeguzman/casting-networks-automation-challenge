@@ -1,0 +1,17 @@
+{
+    "name": "amazon-automation-challenge",
+    "version": "1.0.0",
+    "description": "Automation challenge response by Edrick de Guzman",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx cypress run --record false --headless"
+    },
+    "keywords": [],
+    "author": "Edrick de Guzman",
+    "license": "ISC",
+    "devDependencies": {
+        "cypress": "^12.3.0",
+        "cypress-dotenv": "^2.0.0",
+        "dotenv": "^16.0.3"
+    }
+}

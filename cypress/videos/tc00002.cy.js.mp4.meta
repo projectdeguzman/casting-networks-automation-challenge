@@ -1,0 +1,6 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=-114255
+END=3901
+title=TC00002 Subtotal Calculation in Shopping Cart Page should result in correct calculation as Checkout page

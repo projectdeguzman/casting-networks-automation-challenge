@@ -1,7 +1,7 @@
 # Requirements:
 - Node v18.12.1 installed
 - NPM 8.19.2 installed
-
+- Replace `userEmail` and `userPsw` in `cypress.config.js` with your own credentials to run the tests.
 
 # Installation:
 - Navigate to the project root directory and run `npm install`

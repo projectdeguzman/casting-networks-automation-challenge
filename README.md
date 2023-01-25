@@ -42,7 +42,7 @@
 - The JUnit xml reports can be used and imported into Jenkins or Xray for tracking results
 - The reports configuration can be found in cypress.config.js
 
-# FILED BUGS FOR CASE STUDY
+# Filed bugs for case study
 - BUG #1: Subtotal price after adding item(s) to cart does not display the correct subtotal calculation as Checkout page
     Steps to reproduce:
         1. Launch browser of choice
@@ -84,7 +84,7 @@
             EXPECTED OUTCOME: Subtotal in checkout page should display correct expected subtotal calculation ($109.98)) 
             ACTUAL OUTCOME: Checkout page subtotal calculation is incorrect
 
-# TEST CASES CREATED FROM BUGS
+# Test cases created from bugs
 ##### TC00001: Subtotal Calculation after Adding Item(s) to Cart should result in correct calculation as Checkout page #####
     Preamble:
     1. User has access to a web browser

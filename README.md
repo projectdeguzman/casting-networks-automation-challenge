@@ -13,6 +13,8 @@
 # Execution via terminal (this approach seems to be flaky)
 - To execute all tests: `npm test`
 - To execute single test: `npx cypress run --spec cypress/e2e/test/amazon-ca-tests/<test-spec-name>.cy.js`
+- To execute custom tests: `npx cypress run --spec 'cypress/e2e/test/amazon-ca-tests/tc00001.cy.js, cypress/e2e/test/amazon-ca-tests/tc00003.cy.js, cypress/e2e/test/amazon-us-tests/*'`
+	- essentially, we can use comma-separated globs to define different tests in a command line execution
 
 # Notes:
 - The internal state of the application (in this case of Amazon CA) could have been setup using API if we had access to it
@@ -43,7 +45,7 @@
 - The reports configuration can be found in cypress.config.js
 
 # Filed bugs for case study
-- BUG #1: Subtotal price after adding item(s) to cart does not display the correct subtotal calculation as Checkout page
+##### BUG #1: Subtotal price after adding item(s) to cart does not display the correct subtotal calculation as Checkout page #####
     Steps to reproduce:
         1. Launch browser of choice
         2. Navigate to amazon.ca
@@ -56,7 +58,7 @@
             EXPECTED OUTCOME: Subtotal in checkout page should display correct expected subtotal calculation ($109.98)) 
             ACTUAL OUTCOME: Checkout page subtotal calculation is incorrect
 
-- BUG #2: Subtotal price in Shopping Cart page does not display the correct subtotal calculation as Checkout page
+##### BUG #2: Subtotal price in Shopping Cart page does not display the correct subtotal calculation as Checkout page #####
     Steps to reproduce:
         1. Launch browser of choice
         2. Navigate to amazon.ca
@@ -70,7 +72,7 @@
             EXPECTED OUTCOME: Subtotal in checkout page should display correct expected subtotal calculation ($109.98)) 
             ACTUAL OUTCOME: Checkout page subtotal calculation is incorrect
 
-- BUG #3: Changing Quantity in Shopping Cart does not result in the correct cart subtotal price calculation as Checkout page
+##### BUG #3: Changing Quantity in Shopping Cart does not result in the correct cart subtotal price calculation as Checkout page #####
     Preamble:
 	    - User already has 2 x Echo Dot (3rd Gen) in the cart and the correct subtotal is displayed ($109.98)
     Steps to reproduce:

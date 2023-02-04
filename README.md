@@ -16,7 +16,7 @@
 
 # Notes:
 - The internal state of the application (in this case of Amazon CA) could have been setup using API if we had access to it
-- We could also have used Cypress App Actions by connecting our testing project to 
+- We could also have used Cypress App Actions by connecting our testing project to the application code
 - beforeEach() is being used as both setup and teardown methods because there seems to be an issue with after() and afterEach() when used with Cypress. Here's the open ticket for it in Github https://github.com/cypress-io/cypress/issues/2831
 
 # Assumptions:

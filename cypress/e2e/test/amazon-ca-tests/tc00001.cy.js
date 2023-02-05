@@ -43,7 +43,7 @@ describe("TC00001", function() {
      * @param {string} subtotal - The expected subtotal after adding the product to the cart
      */
     function addToCartAndVerify(asin, numItems, label, subtotal) {
-        // Add product(s) to car
+        // Add product(s) to cart
         productListingPage.addAlexaProductToCart(asin, numItems);
 
         // Verify that the subtotal calculation is correct

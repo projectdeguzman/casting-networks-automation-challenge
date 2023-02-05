@@ -36,7 +36,7 @@ describe("TC00003", function() {
 
         // Change the quantity from 2 to 4
         changeQuantityAndVerify(primaryProductASIN, nextQuantity, nextLabel, `$${nextSubtotal}`)
-            // Change the quantity from 4 to 2
+        // Change the quantity from 4 to 2
         changeQuantityAndVerify(primaryProductASIN, initQuantity, initLabel, `$${initSubtotal}`)
     });
 

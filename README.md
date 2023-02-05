@@ -169,7 +169,7 @@
 - The resource would need to ensure that the new test cases for the bugs are executed accordingly.
 - We also want to ensure coverage for multiple OS & browsers. For that we could probably use BrowserStack for cross-browser testing.
 - All of this is a collaboration between product, dev, devops and qe/qa teams to ensure that the release of the hotfix is a success and all environments are passing in the automation test suites
-- The test executions can be tracked in Xray, where we can have a test plan for this release, and the test plan will have test executions for each combibation of browsers and environments. This is how we can track it's progress.
+- The test executions can be tracked in Xray, where we can have a test plan for this release, and the test plan will have test executions for each combibation of browsers and environments. This is how we can track its progress.
 
 # Other approaches:
 - Another approach to test this scenario would be using API tests rather than UI tests to check whether the price calculation from the server returns the correct result

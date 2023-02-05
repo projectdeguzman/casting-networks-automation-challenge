@@ -162,6 +162,15 @@
 - `test/amazon-ca-test` directory contains the tests for Amazon CA. Other `/amazon-xx-tests` can be created for other Amazon environments, `/amazon-us-tests` directory is created for the purpose of demonstrating that.
 - `cypress.config.js` contains most of the configurable environment variables to allow for customization of the test suite (change in product, price, quantity)
 
+# Test Plan:
+- I would assume that if this bug was captured, and this seems to be a critical issue because Amazon is losing sales, so we have to put this at the highest priority.
+- We would allocate our resources for analyzing the test results for the next hotfix release (should be ASAP)
+- We need to perform regression on the afflicted areas, which would be shopping cart, checkout, added to cart pages. We need to run the tests in those areas.
+- The resource would need to ensure that the new test cases for the bugs are executed accordingly.
+- We also want to ensure coverage for multiple OS & browsers. For that we could probably use BrowserStack for cross-browser testing.
+- All of this is a collaboration between product, dev, devops and qe/qa teams to ensure that the release of the hotfix is a success and all environments are passing in the automation test suites
+- The test executions can be tracked in Xray, where we can have a test plan for this release, and the test plan will have test executions for each combibation of browsers and environments. This is how we can track it's progress.
+
 # Other approaches:
 - Another approach to test this scenario would be using API tests rather than UI tests to check whether the price calculation from the server returns the correct result
     - We can use a combination of RestAssured, Groovy/Java and TestNG for the testing framework
